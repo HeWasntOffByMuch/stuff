@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="pl">
 <head>
     <meta charset="utf-8">
@@ -12,36 +12,90 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<div id="page-container">
-    <header class="scrolled-top">
-        <a id="header-logo" class="scrolled-top">
+<div id="header" class="scrolled-top">
+    <a id="header-logo" class="scrolled-top">
 
-        </a>
-        <a id="header-logo-text" class="scrolled-top">
+    </a>
+    <a id="header-logo-text" class="scrolled-top">
 
-        </a>
-    </header>
-    <main>
-
-    </main>
+    </a>
 </div>
-
-
-
-
-
-
-
-
+<div id="fullpage">
+    <div class="section">
+        <div class="slide" data-anchor="slide1">
+            <div id="scene1-container">
+                <ul id="scene1" class="scene unselectable"
+                    data-friction-x="0.1"
+                    data-friction-y="0.1"
+                    data-scalar-x="22"
+                    data-scalar-y="15">
+                    <li class="layer" data-depth="-0.3">
+                        <div id="l10" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="0">
+                        <div id="l9" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="0.02">
+                        <div id="l8" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="0.2">
+                        <div id="l7" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="0.3">
+                        <div  id="l6" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="0.6">
+                        <div  id="l5" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="0.7">
+                        <div  id="l4" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="0.8">
+                        <div  id="l3" class="layer_img"></div>
+                    </li>
+                    <li id="layer2" class="layer" data-depth="0.3">
+                        <div id="main-page-text">
+                            <h1>Tutaj logo<br>
+                                INTELIGENTNE TECHNOLOGIE<br>
+                                MOZE COS NA BUDYNKACH?
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="layer" data-depth="1">
+                        <div  id="l2" class="layer_img"></div>
+                    </li>
+                    <li class="layer" data-depth="1">
+                        <div  id="l1" class="layer_img"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="slide">
+            <h1>
+                tutaj pewnie jakas galeria zdjec. do zrobienia bez problemu.
+            </h1>
+        </div>
+    </div>
+    <div class="section fp-auto-height">
+        <div class="slide">
+            <h1>STOPKA Z INFO KONTAKTOWYM. NIE BEDZIE TU ZDJECIA</h1>
+        </div>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/fullPage.js-master/jquery.fullPage.js"></script>
+<script src="js/parallax-master/source/parallax.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
