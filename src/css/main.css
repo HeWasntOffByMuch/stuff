@@ -69,16 +69,17 @@ body {
 }
 
 .section:nth-of-type(1) {
-    background-color: #caf2fe;
+
 }
 .section:nth-of-type(2) {
     background-color: #fff;
     color: #fff;
     background: url("../img/cam1.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: 0 100vh;
 }
 .section:nth-of-type(3) {
     background-color: #35362d;
-    background-attachment: fixed;
 }
 
 #scene1 {
@@ -126,8 +127,18 @@ body {
     position: absolute;
     width: 200%;
     height: 200%;
-    top: -25%;
-    left: -22.5%;
+    top: -50%;
+    left: -30%;
+    transform: scale(0.3);
+}
+
+.fadeonload  {
+    animation: fadein 1000ms;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #l1 {
@@ -163,25 +174,39 @@ body {
 
 
 @media (max-width: 768px){
-    .layer_img {
+    /*.layer_img {
         background-size: cover;
         position: absolute;
         width: 300%;
         height: 300%;
         top: -18%;
         left: -100%;
-    }
+    }*/
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 400px){
     .layer_img {
+        bottom: 96px;
         background-size: cover;
         position: absolute;
         width: 300%;
         height: 300%;
-        top: -25%;
-        left: -100%;
+        top: -110%;
+        left: -150%;
+        transform: scale(0.1);
+    }
+}
+
+@media (min-width: 1900px) and (min-height: 1000px){
+    .layer_img {
+        bottom: 96px;
+        background-size: cover;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -12%;
+        left: -22%;
     }
 }
 

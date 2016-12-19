@@ -14,6 +14,8 @@ $(document).ready(function() {
     var parallax = new Parallax(document.getElementById('scene1'));
     parallax.calibrate(true, true);
 
+    console.log('width', window.screen.width)
+
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
@@ -94,15 +96,6 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-
-
-    // $('#layer1').css({top: '-500px', left: '-500px'});
-    // $('#layer1 img').css({filter: 'blur(5px)'});
-    // $('#layer2').css({top: '20vh', left: '10vw'});
-
-
-
-
 });
 
 
